@@ -17,5 +17,3 @@ Mismo mapa de `12 × 12` que el punto 1. A* usa `f(n)=g(n)+h(n)`. Las dos heurí
     <td><img src="images/2-euclidiana.png" width="280" alt="A* Euclidiana"></td>
   </tr>
 </table>
-
-Las dos heurísticas devuelven el mismo costo 22. Manhattan expande 36 estados y Euclidiana 37. El tiempo queda por debajo de 0.1 ms y no distingue eficiencia. Manhattan acota mejor el costo restante en este dominio: nunca queda por debajo de Euclidiana, así que orienta un poco más la expansión.

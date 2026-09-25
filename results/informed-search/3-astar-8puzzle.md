@@ -13,5 +13,3 @@ BFS no usa heurística. A* con fichas fuera de lugar usa `h1(n)`: número de fic
 | BFS | 31 | 181439 | 0.400 s |
 | A* fichas fuera de lugar | 31 | 143849 | 0.680 s |
 | A* Manhattan | 31 | 21198 | 0.164 s |
-
-Los tres algoritmos encuentran una solución de 31 movimientos, la distancia máxima respecto de ese objetivo. BFS recorre casi toda la componente conexa, 181439 estados. Las fichas fuera de lugar recortan poco: 143849 estados. Manhattan baja la expansión a 21198. El tiempo de A* con fichas fuera de lugar queda por encima de BFS porque cada nodo calcula la heurística; la diferencia útil está en los estados expandidos.

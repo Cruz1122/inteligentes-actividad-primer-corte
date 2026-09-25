@@ -24,8 +24,6 @@ Cálculo a mano:
 - `D` (X en 8): `+1`. Columna derecha de X. Terminal.
 - `A`: `max(-1, 0, +1) = +1`
 
-Python sobre el árbol nombrado y sobre el tablero real coincide: valor `+1`, jugada `D`, casilla 8.
-
 | Acción de X | Valor Minimax |
 | --- | ---: |
 | 6 | -1 |
@@ -47,5 +45,3 @@ Otros tableros:
     <td><img src="images/1-x-bloquea-a-o.png" width="160" alt="X bloquea a O"></td>
   </tr>
 </table>
-
-En el tablero vacío las nueve primeras jugadas valen 0: con juego perfecto hay empate. En "X cierra" la casilla 2 gana al momento; la figura muestra las tres X de la fila de arriba. 5 empata y el resto pierde. En "X bloquea a O" la amenaza está en 2. La figura ya pone la X ahí: O no puede cerrar la fila. Esa jugada no hace tres en raya de X; cualquier otra deja que O gane y vale `-1`. Tras tapar, Minimax sigue dando `+1` porque X puede forzar la victoria.

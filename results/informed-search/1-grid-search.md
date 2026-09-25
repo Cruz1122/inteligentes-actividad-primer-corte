@@ -29,5 +29,3 @@ Costo Uniforme ordena por `g(n)`. A* ordena por `g(n)` más distancia Manhattan.
     <td><img src="images/1-beam-k8.png" width="220" alt="Beam Search k=8"></td>
   </tr>
 </table>
-
-Costo Uniforme y A* encuentran el mismo camino de costo 22. A* expande 36 estados y Costo Uniforme 49. Beam Search con `k = 1` también llega, pero por un camino de costo 40: el haz se queda en el corredor que se ve cerca del objetivo y pierde el rodeo óptimo. Con `k = 2` o más el haz alcanza el costo 22.
