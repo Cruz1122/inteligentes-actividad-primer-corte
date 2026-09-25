@@ -1,37 +1,57 @@
-# Actividad final
+# Actividad final del primer corte
 
-## Búsqueda no informada (Uninformed Search)
+Sistemas Inteligentes I. Talleres de búsqueda no informada, informada, Minimax y poda Alfa–Beta.
 
-En esta sección se presentan los algoritmos de búsqueda no informada, que resuelven problemas sin utilizar información adicional sobre la meta más allá de la estructura del propio problema. Son útiles cuando no se dispone de heurísticas u otro conocimiento específico.
+## Integrantes
 
-- [Carpeta de Búsqueda No Informada](/notebooks/uninformed-search/)
-- [Resultados de Ejecución](/results/uninformed-search/)
+- Juan Camilo Cruz Parra — 37552
 
-Los algoritmos incluidos (como búsqueda en anchura y búsqueda en profundidad) exploran el espacio de estados sistemáticamente. La diferencia principal radica en el orden en que expanden los nodos y la eficiencia en encontrar una solución dependiendo del problema concreto y de su tamaño.
+## Descripción
 
-## Búsqueda informada (Informed Search)
+La actividad desarrolla los talleres de los notebooks de clase. Cada tema tiene un notebook baseline con el código visto en clase, las respuestas conceptuales en celdas Markdown y enlaces a los experimentos. Los resultados de cada experimento están en `results/`.
 
-En esta sección se presentan los algoritmos de búsqueda informada, que usan una heurística para orientar la expansión hacia la meta. Sirven para recortar el espacio de estados cuando hay una estimación del costo restante.
+## Notebooks
 
-- [Carpeta de Búsqueda Informada](/notebooks/informed-search/)
-- [Resultados de Ejecución](/results/informed-search/)
+### 1. Búsqueda no informada: BFS y DFS
 
-Los algoritmos incluidos (como costo uniforme, A* y Beam Search) combinan el costo acumulado con esa estimación. La diferencia principal radica en si conservan optimalidad y cuántos estados expanden en el mismo problema.
+- [notebooks/uninformed-search/baseline.ipynb](notebooks/uninformed-search/baseline.ipynb)
+- Talleres: [orden de movimientos](notebooks/uninformed-search/1-movement-comparison.ipynb), [BFS vs DFS](notebooks/uninformed-search/2-bfs-dfs-comparison.ipynb), [recipientes](notebooks/uninformed-search/3-bowl-mod.ipynb), [8-puzzle](notebooks/uninformed-search/4-bfs-8puzzle.ipynb)
+- Resultados: [results/uninformed-search/](results/uninformed-search/)
 
-## Búsqueda adversaria (Minimax)
+### 2. Búsqueda informada
 
-En esta sección se presentan los algoritmos de búsqueda adversaria, que eligen una jugada considerando la respuesta del oponente. Sirven cuando el valor de un movimiento depende de lo que el otro jugador puede forzar después.
+- [notebooks/informed-search/baseline.ipynb](notebooks/informed-search/baseline.ipynb)
+- Talleres: [cuadrícula 12 × 12](notebooks/informed-search/1-grid-search.ipynb), [heurísticas](notebooks/informed-search/2-heuristics.ipynb), [A* 8-puzzle](notebooks/informed-search/3-astar-8puzzle.ipynb)
+- Resultados: [results/informed-search/](results/informed-search/)
 
-- [Carpeta de Minimax](/notebooks/minimax/)
-- [Resultados de Ejecución](/results/minimax/)
+### 3. Búsqueda adversarial: Minimax
 
-El algoritmo incluido (Minimax) alterna MAX y MIN sobre el árbol de juego. La diferencia principal radica en qué ramas sobreviven cuando el adversario también juega de forma racional.
+- [notebooks/minimax/baseline.ipynb](notebooks/minimax/baseline.ipynb)
+- Talleres: [tres en raya](notebooks/minimax/1-tictactoe.ipynb), [piedras 1, 2 o 4](notebooks/minimax/2-piedras.ipynb)
+- Resultados: [results/minimax/](results/minimax/)
 
-## Poda alfa-beta (Alpha-Beta Pruning)
+### 4. Búsqueda adversarial: poda Alfa–Beta
 
-En esta sección se presenta la poda alfa-beta, que recorre el mismo árbol que Minimax y corta ramas que ya no pueden cambiar la decisión. Sirve para llegar al mismo valor visitando menos nodos.
+- [notebooks/alpha-beta-pruning/baseline.ipynb](notebooks/alpha-beta-pruning/baseline.ipynb)
+- Taller: [tres en raya](notebooks/alpha-beta-pruning/1-tictactoe.ipynb)
+- Resultados: [results/alpha-beta-pruning/](results/alpha-beta-pruning/)
 
-- [Carpeta de Poda Alfa-Beta](/notebooks/alpha-beta-pruning/)
-- [Resultados de Ejecución](/results/alpha-beta-pruning/)
+## Cómo ejecutar
 
-El algoritmo mantiene una cota `α` para MAX y una cota `β` para MIN. Cuando `α ≥ β` esa rama se descarta porque el adversario no la elegiría.
+1. Python 3.12 o superior.
+2. Crear un entorno e instalar dependencias:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install matplotlib jupyter ipykernel
+```
+
+3. Ejecutar los notebooks, hay varias formas:
+- Abrir Jupyter desde la raíz del repositorio y ejecutar.
+- Si tienes la extensión de Jupyter en algún IDE como VSCode o sus forks como Cursor, selecciona el Kernel en la parte superior derecha, y selecciona el entono virtual de Python que acabamos de instalar.
+
+**Importante:** primero ejecutar el `baseline.ipynb` de cada carpeta (estos son los notebooks que vimos en clase pero organizaditos). Los talleres de la misma carpeta son los que se especifican en dichos notebooks, y ya traen sus salidas.
+
+## Uso de IA generativa
+Ver [ai-usage.md](ai-usage.md) :)

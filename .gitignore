@@ -1,0 +1,5 @@
+.venv/
+.jupyter-data/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
