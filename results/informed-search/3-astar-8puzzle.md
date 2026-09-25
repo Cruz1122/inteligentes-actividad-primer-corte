@@ -10,6 +10,6 @@ BFS no usa heurística. A* con fichas fuera de lugar usa `h1(n)`: número de fic
 
 | Algoritmo | Movimientos | Expandidos | Tiempo |
 | --- | ---: | ---: | ---: |
-| BFS | 31 | 181439 | 0.400 s |
-| A* fichas fuera de lugar | 31 | 143849 | 0.680 s |
-| A* Manhattan | 31 | 21198 | 0.164 s |
+| BFS | 31 | 181439 | 0.511 s |
+| A* fichas fuera de lugar | 31 | 143849 | 0.838 s |
+| A* Manhattan | 31 | 21198 | 0.181 s |

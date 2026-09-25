@@ -8,10 +8,10 @@ DFS con pila. La celda se marca al descubrirla y la búsqueda para al sacar la m
 
 | Orden de sucesores | Pasos | Explorados | Tiempo |
 | --- | ---: | ---: | ---: |
-| IZQ, DER, ARR, ABA | 8 | 18 | 0.049 ms |
-| IZQ, ARR, ABA, DER | 8 | 12 | 0.029 ms |
-| ABA, IZQ, ARR, DER | 8 | 17 | 0.026 ms |
-| DER, ABA, IZQ, ARR | 8 | 18 | 0.026 ms |
+| IZQ, DER, ARR, ABA | 8 | 18 | 0.031 ms |
+| IZQ, ARR, ABA, DER | 8 | 12 | 0.022 ms |
+| ABA, IZQ, ARR, DER | 8 | 17 | 0.039 ms |
+| DER, ABA, IZQ, ARR | 8 | 18 | 0.036 ms |
 
 <table>
   <tr>

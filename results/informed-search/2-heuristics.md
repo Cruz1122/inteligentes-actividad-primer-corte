@@ -8,8 +8,8 @@ Mismo mapa de `12 × 12` que el punto 1. A* usa `f(n)=g(n)+h(n)`. Las dos heurí
 
 | Heurística | Costo | Expandidos | Tiempo |
 | --- | ---: | ---: | ---: |
-| Manhattan | 22 | 36 | 0.082 ms |
-| Euclidiana | 22 | 37 | 0.066 ms |
+| Manhattan | 22 | 36 | 0.130 ms |
+| Euclidiana | 22 | 37 | 0.126 ms |
 
 <table>
   <tr>
