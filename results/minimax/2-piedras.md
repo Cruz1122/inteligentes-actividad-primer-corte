@@ -23,5 +23,3 @@ Quien toma la última piedra gana. En cada turno se retiran 1, 2 o 4 piedras. MA
 | 13 | +1 | 1 | (1, 1), (-1, 2), (1, 4) |
 | 14 | +1 | 2 | (-1, 1), (1, 2), (-1, 4) |
 | 15 | -1 | 1 | (-1, 1), (-1, 2), (-1, 4) |
-
-Las perdedoras son 3, 6, 9, 12 y 15: los múltiplos de 3. Desde ahí cualquier jugada deja 1 o 2 módulo 3 y el rival puede devolver un múltiplo de 3. En 4 se puede retirar 1 o 4; las dos dejan a MIN en una perdedora. En 5 hay que retirar 2. El patrón se mantiene: MAX gana si deja un múltiplo de 3, incluido 0 al tomar la última piedra.
