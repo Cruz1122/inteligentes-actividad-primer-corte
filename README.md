@@ -17,3 +17,12 @@ En esta sección se presentan los algoritmos de búsqueda informada, que usan un
 - [Resultados de Ejecución](/results/informed-search/)
 
 Los algoritmos incluidos (como costo uniforme, A* y Beam Search) combinan el costo acumulado con esa estimación. La diferencia principal radica en si conservan optimalidad y cuántos estados expanden en el mismo problema.
+
+## Búsqueda adversaria (Minimax)
+
+En esta sección se presentan los algoritmos de búsqueda adversaria, que eligen una jugada considerando la respuesta del oponente. Sirven cuando el valor de un movimiento depende de lo que el otro jugador puede forzar después.
+
+- [Carpeta de Minimax](/notebooks/minimax/)
+- [Resultados de Ejecución](/results/minimax/)
+
+El algoritmo incluido (Minimax) alterna MAX y MIN sobre el árbol de juego. La diferencia principal radica en qué ramas sobreviven cuando el adversario también juega de forma racional.
