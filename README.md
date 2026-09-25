@@ -26,3 +26,12 @@ En esta sección se presentan los algoritmos de búsqueda adversaria, que eligen
 - [Resultados de Ejecución](/results/minimax/)
 
 El algoritmo incluido (Minimax) alterna MAX y MIN sobre el árbol de juego. La diferencia principal radica en qué ramas sobreviven cuando el adversario también juega de forma racional.
+
+## Poda alfa-beta (Alpha-Beta Pruning)
+
+En esta sección se presenta la poda alfa-beta, que recorre el mismo árbol que Minimax y corta ramas que ya no pueden cambiar la decisión. Sirve para llegar al mismo valor visitando menos nodos.
+
+- [Carpeta de Poda Alfa-Beta](/notebooks/alpha-beta-pruning/)
+- [Resultados de Ejecución](/results/alpha-beta-pruning/)
+
+El algoritmo mantiene una cota `α` para MAX y una cota `β` para MIN. Cuando `α ≥ β` esa rama se descarta porque el adversario no la elegiría.
